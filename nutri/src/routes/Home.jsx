@@ -1,11 +1,15 @@
-import { Link } from "react-router-dom";
+import React from 'react'
+import Header from './components/header';
 
 
 function Home() {
   return(
     <div className="App">
+      <Header />
     <header className="App-header">
-      <img src={'https://s.cornershopapp.com/product-images/2224795.jpg?versionId=IE3p1GE4c7d8.Aeu1Xhg7hfZyeJLEVQZ'} className="App-logo" alt="logo" />
+      <img src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1t2OsYgOGK3Oop7dP4We9iGudGn4dgrW7HMJkGjvKWzLtOa9eEULZkHDxe-gZhqBk5Ho&usqp=CAU'}
+           className="App-logo" 
+           alt="logo" />
      <div className="nutriharmony">
      <p className="nutri">
         Nutri
@@ -13,38 +17,7 @@ function Home() {
       <p className="harmony">
         Harmony
       </p>
-     </div>
-
-     <Link
-        to="/consultorias"
-        className="App-link "
-        >
-          Consultorias
-     </Link>
-     <Link
-        to="/programas"
-        className="App-link "
-        >
-          Programas
-     </Link>
-     <Link
-        to="/blog"
-        className="App-link "
-        >
-          Blog
-     </Link>
-     <Link
-        to="/galeria"
-        className="App-link "
-        >
-          Galeria
-     </Link>
-     <Link
-        to="/agendamento"
-        className="App-link "
-        >
-          Marcar Consulta
-     </Link>
+     </div>    
     </header>
   </div>
   )
